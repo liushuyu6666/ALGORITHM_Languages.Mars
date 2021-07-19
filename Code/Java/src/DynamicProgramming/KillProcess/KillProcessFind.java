@@ -5,11 +5,11 @@ import java.util.*;
 public class KillProcessFind {
     public List<Integer> killProcess(List<Integer> pid, List<Integer> ppid, int kill) {
         Boolean[] arr = new Boolean[pid.size()];
-        Arrays.fill(arr, null);
-        arr[pid.indexOf(kill)] = true;
+        Arrays.fill(arr, null); // takes O(n)
+        arr[pid.indexOf(kill)] = true; // takes O(n)
         List<Integer> ans = new ArrayList<>();
         for(int i = 0; i < pid.size(); i++){
-            findParent(pid, ppid, arr, pid.get(i));
+            findParent(pid, ppid, arr, pid.get(i));  // takes O(2 * n)
         }
         for(int i = 0; i < arr.length; i++){
             if(arr[i]){
