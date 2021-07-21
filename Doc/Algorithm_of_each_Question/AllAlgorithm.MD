@@ -29,3 +29,17 @@
 - fill the grids, line by line. conditions in code.
 - yellow grid need to be filled in advance.
 - the right bottom is the final result.
+
+### Regular Expression Matching
+
+**source**: https://leetcode-cn.com/problems/regular-expression-matching/
+
+**solution**:
+
+- use the board table 
+
+![](img/Regular_Expression_Matching.jpg)
+
+- fill the grids, line by line. conditions in code.
+- the right bottom is the final result.
+
