@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package Math;
 
 public class MissingNumberInArithmeticProgression {
     public int missingNumber(int[] arr) {
