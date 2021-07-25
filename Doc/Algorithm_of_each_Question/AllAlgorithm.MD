@@ -43,3 +43,25 @@
 - fill the grids, line by line. conditions in code.
 - the right bottom is the final result.
 
+## Array
+
+### Longest Valid Parentheses
+
+**source**: https://leetcode-cn.com/problems/longest-valid-parentheses/
+
+**solution**:
+
+- we have a `dp[len]` to record the longest valid parentheses ending with the current position.
+
+- check`string[i]` and `string[i-1]`, details in the code:
+
+  - if `string[i] == '('` ,then `dp[i] = 0`;
+
+  - else when `string[i] == ')'`
+
+    - if `string[i-1] == '('`, `dp[i] = dp[i-2] + 2`
+    - if `string[i-1] == ')'`, when need to find `pos` and then do further work.
+
+    ![](img/Longest_Valid_Parenthese.jpg)
+
+  
