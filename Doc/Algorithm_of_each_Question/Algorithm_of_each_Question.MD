@@ -79,7 +79,43 @@
 
 
 
+# Tree
 
+## Binary Tree
+
+### Traversal
+
+#### Binary Tree In-order Traversal:
+
+**source:** https://leetcode-cn.com/problems/binary-tree-inorder-traversal/
+
+**solution:**
+
+- use stack, very similar to pre-order
+
+#### Binary Tree Pre-order Traversal:
+
+**source:** https://leetcode-cn.com/problems/binary-tree-preorder-traversal/
+
+**solution:**
+
+- use stack, very similar to in-order traversal
+
+#### Binary Tree Post-order Traversal:
+
+**source:** https://leetcode-cn.com/problems/binary-tree-postorder-traversal/
+
+**solution:**
+
+- use two stacks, the upper stack stores the child nodes that need to be traversed, the lower stack store the nodes in a reversed order
+
+#### Binary Tree Level Order Traversal:
+
+**source:** https://leetcode-cn.com/problems/binary-tree-level-order-traversal/
+
+**solution**
+
+- stuff nodes into two queues alternatively.
 
 # Monotone Stack
 
